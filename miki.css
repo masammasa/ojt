@@ -1,11 +1,38 @@
+body{
+    width: 1210px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
 .keyvisual{
+    height: 100vh;
+    width: 1152px;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+
+.imgs{
     position: relative;
+    
 }
 
-.av-img{
-    position: absolute;
+#main-img{
+    display: block;
+    margin: 0 auto;
 }
 
-.av-img2{
+.logo-img{
     position: absolute;
+    left: 0;
+    top: -25%;
+}
+
+.vt-img{
+    position: absolute;
+    right: 0;
+    top: 49.5%;
+}
+
+.keyvisual p{
+    padding-top: 1%;
 }
