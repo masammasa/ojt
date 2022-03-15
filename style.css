@@ -1,3 +1,337 @@
+
+#Latest-Articles h2{
+    text-align: center;
+    font-size: 30px;
+   }
+   
+   .image-lists{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       width: 100%;
+   
+   }
+   
+   .contents{
+       width: 260px;
+       height: 350px;
+       margin: 40px 30px;
+       display: inline-block;
+       cursor: pointer;
+       transition: all 0.3s ease 0s;
+       position: relative;
+   }
+   
+   .contents:hover{
+       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+       transform: translateY(-0.1875em);
+   
+   }
+   
+   .contents p{
+       line-height: 3ex;
+   }
+   
+   
+   .read{
+       position: absolute;
+       right: 0;
+       bottom: 0;
+   
+   }
+   
+
+   .read-more{
+    text-align: right;
+}
+
+   .read-line{
+       text-align: right;
+   }
+
+   .word{
+    width: 100%;
+   }
+   .word p{
+    width: 100%;
+   }
+
+  img{
+    max-width: 100%;
+  }
+  .header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3% 0;
+    width: 100vw;
+    position: relative;
+  }
+  .headerLink{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+  .headerLink a{
+    text-decoration: none;
+    color: black;
+  }
+  footer{
+    text-align: center;
+    padding: 5% 0;
+    background-color: black;
+    width: 100vw;
+    margin-top: 10%;
+  }
+  footer p{
+    color: white;
+  }
+  .spMenu{
+    position: absolute;
+    top: -100vh;
+  }
+
+  main{
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 0 auto;
+    width: 1152px;
+  }
+
+  @media screen and (max-width:767px){
+    .showing{
+      top: 0;
+      background-color:rgba(255, 255, 255, 0.9);
+    }
+    *{
+      width: 100vw;
+    }
+    .header{
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+    }
+    .headerLink{
+      position: absolute;
+      right: -100%;
+    }
+    .spMenu{
+      height: 100vh;
+      width: 100vw;
+      z-index: 50;
+      position: fixed;
+      padding: 0px;
+      transition: all .5s ease;
+      height: 100%;
+    }
+    .spMenu img{
+      width: 140px;
+      height: auto;
+      transform: translate(-50%);
+      position: absolute;
+      top: 3%;
+      left: 50%;
+    }
+    .spMenu ul{
+      position: relative;
+      text-align: center;
+      top: 170px;
+    }
+    .spMenu li{
+      padding: 10% 0 0 0;
+      font-weight: bold;
+    }
+    .openbtn1{
+      position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+      background:transparent;
+      cursor: pointer;
+      width: 50px;
+      height:50px;
+      border-radius: 5px;
+      z-index: 100;
+    }
+      
+      /*ボタン内側*/
+    .openbtn1 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 3px;
+      border-radius: 2px;
+      background: black;
+      width: 45%;
+    }
+      
+    .openbtn1 span:nth-of-type(1) {
+      top:15px;
+    }
+      
+    .openbtn1 span:nth-of-type(2) {
+      top:23px;
+    }
+      
+    .openbtn1 span:nth-of-type(3) {
+      top:31px;
+    }
+      
+      /*activeクラスが付与されると線が回転して×に*/
+      
+    .openbtn1.active span:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+    }
+      
+    .openbtn1.active span:nth-of-type(2) {
+      opacity: 0;/*真ん中の線は透過*/
+    }
+      
+    .openbtn1.active span:nth-of-type(3){
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+    }
+      /*========= レイアウトのためのCSS ===============*/
+      
+    body{
+      background:#f3f3f3;
+      padding:0px;
+    }
+      
+      
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+      
+    .lead{
+      margin:20px 0 0 0;
+    }
+      
+    .btn-block{
+      width:200px;
+      padding: 30px;
+    }
+
+  }
+
+
+/* 赤嶺のkeyvisual */
+
+.keyvisual{
+  padding: 3% 9%;
+  padding-bottom: 10%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imgs{
+  position: relative;
+}
+
+#mainpc{
+  display: block;
+  margin: 0 auto;
+}
+#mainsp{
+  display: none;
+}
+
+.logo-img{
+  position: absolute;
+  left: -8%;
+  top: -27%;
+  width: 280px;
+}
+
+.vt-img #vtpc{
+    position: absolute;
+    right: -6.7%;
+    top: 46.8%;
+  }
+
+.vt-img #vtsp{
+  display: none;
+}
+
+
+.keyvisual p{
+  padding-top: 1%;
+  margin-left: -4%;
+  font-size: 20px;
+}
+
+.brsp{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  main{
+    width: 767px;
+    margin: 0 0;
+  }
+
+  .keyvisual{
+    width: 100%;
+    padding: 17% 0;
+    padding-left: 4%;
+  }
+
+  #mainpc{
+    display: none;
+  }
+
+  #mainsp{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 767x;
+  }
+
+  .logo-img{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-110%);
+    width: 140px;
+  }
+
+  .keyvisual p{
+    padding-top: 3%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .brsp{
+    display: block;
+   
+  }
+
+  .vt-img #vtpc{
+    display: none;
+  }
+  
+  .vt-img #vtsp{
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 500px;
+  }
+
+  /* kae */
+  .contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+=======
 @charset "UTF-8";
 /* 
 Theme name: ojt
@@ -6,3 +340,4 @@ Author: ojt
 Author URI: https://okinawa.nexseed.com
 Description: Nexseedのホームページ
 */
+
