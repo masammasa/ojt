@@ -91,6 +91,10 @@
     position: absolute;
     top: -100vh;
   }
+  main{
+    max-width: 1152px;
+    margin: 0 auto;
+  }
   @media screen and (max-width:767px){
     .showing{
       top: 0;
@@ -235,14 +239,15 @@
   position: absolute;
   left: -8%;
   top: -27%;
-  width: 280px;
+  width: 26%;
 }
 
 .vt-img #vtpc{
-    position: absolute;
-    right: -6.7%;
-    top: 46.8%;
-  }
+  position: absolute;
+  right: -5.5%;
+  top: 56%;
+  width: 45%;
+}
 
 .vt-img #vtsp{
   display: none;
@@ -267,7 +272,7 @@
 
   .keyvisual{
     width: 100%;
-    padding: 130px 0;
+    padding: 35% 0 10% 0;
   }
 
   #mainpc{
@@ -285,7 +290,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%,-110%);
-    width: 140px;
+    width: 32%;
   }
 
   .keyvisual p{
@@ -308,9 +313,9 @@
   .vt-img #vtsp{
     display: block;
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 4%;
-    width: 500px;
+    width: 60%;
   }
 
   /* kae */
