@@ -262,13 +262,12 @@
 @media screen and (max-width: 767px) {
 
   main{
-    width: 767px;
     margin: 0 0;
   }
 
   .keyvisual{
     width: 100%;
-    padding: 17% 0;
+    padding: 130px 0;
   }
 
   #mainpc{
@@ -320,5 +319,6 @@
     justify-content: center;
     flex-direction: column;
   }
+
 
 }
