@@ -209,3 +209,116 @@
       padding: 30px;
     }
   }
+
+  /* 赤嶺のkeyvisual */
+
+.keyvisual{
+  padding: 3% 9%;
+  padding-bottom: 10%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imgs{
+  position: relative;
+}
+
+#mainpc{
+  display: block;
+  margin: 0 auto;
+}
+#mainsp{
+  display: none;
+}
+
+.logo-img{
+  position: absolute;
+  left: -8%;
+  top: -27%;
+  width: 280px;
+}
+
+.vt-img #vtpc{
+    position: absolute;
+    right: -6.7%;
+    top: 46.8%;
+  }
+
+.vt-img #vtsp{
+  display: none;
+}
+
+
+.keyvisual p{
+  padding-top: 1%;
+  margin-left: -4%;
+  font-size: 20px;
+}
+
+.brsp{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  main{
+    width: 767px;
+    margin: 0 0;
+  }
+
+  .keyvisual{
+    width: 100%;
+    padding: 17% 0;
+  }
+
+  #mainpc{
+    display: none;
+  }
+
+  #mainsp{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 767x;
+  }
+
+  .logo-img{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-110%);
+    width: 140px;
+  }
+
+  .keyvisual p{
+    padding-top: 3%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .brsp{
+    display: block;
+   
+  }
+
+  .vt-img #vtpc{
+    display: none;
+  }
+  
+  .vt-img #vtsp{
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 500px;
+  }
+
+  /* kae */
+  .contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
