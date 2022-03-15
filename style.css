@@ -47,11 +47,17 @@
    .read-line{
        text-align: right;
    }
-   .contents img{
-    max-width: 100%;
+   .word{
+    width: 100%;
+   }
+   .word p{
+    width: 100%;
    }
    body{
     padding: 0;
+  }
+  img{
+    max-width: 100%;
   }
   .header{
     display: flex;
