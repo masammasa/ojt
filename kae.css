@@ -13,11 +13,12 @@
 
 .contents{
     width: 320px;
-    height: 400px;
+    height: 500px;
     margin: 40px 30px;
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    position: relative;
 }
 
 .contents:hover{
@@ -32,10 +33,18 @@
 
 
 .read{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
 }
 
+.read-more{
+    text-align: right;
+}
+
+.read-line{
+    text-align: right;
+}
 
 

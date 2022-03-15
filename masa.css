@@ -23,6 +23,7 @@ footer{
   padding: 5% 0;
   background-color: black;
   width: 100vw;
+  margin-top: 10%;
 }
 footer p{
   color: white;
@@ -78,74 +79,74 @@ footer p{
     position: relative;/*ボタン内側の基点となるためrelativeを指定*/
     background:transparent;
     cursor: pointer;
-        width: 50px;
-        height:50px;
+    width: 50px;
+    height:50px;
     border-radius: 5px;
     z-index: 100;
-    }
+  }
     
     /*ボタン内側*/
-    .openbtn1 span{
-        display: inline-block;
-        transition: all .4s;/*アニメーションの設定*/
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
+  .openbtn1 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
     background: black;
-      width: 45%;
-      }
+    width: 45%;
+  }
     
-    .openbtn1 span:nth-of-type(1) {
+  .openbtn1 span:nth-of-type(1) {
     top:15px;
-    }
+  }
     
-    .openbtn1 span:nth-of-type(2) {
+  .openbtn1 span:nth-of-type(2) {
     top:23px;
-    }
+  }
     
-    .openbtn1 span:nth-of-type(3) {
+  .openbtn1 span:nth-of-type(3) {
     top:31px;
-    }
+  }
     
     /*activeクラスが付与されると線が回転して×に*/
     
-    .openbtn1.active span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }
+  .openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
     
-    .openbtn1.active span:nth-of-type(2) {
+  .openbtn1.active span:nth-of-type(2) {
     opacity: 0;/*真ん中の線は透過*/
-    }
+  }
     
-    .openbtn1.active span:nth-of-type(3){
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
+  .openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
     /*========= レイアウトのためのCSS ===============*/
     
-    body{
+  body{
     background:#f3f3f3;
-        padding:0px;
-    }
+    padding:0px;
+  }
     
     
-    a{
+  a{
     color: #333;
     text-decoration: none;
-    }
+  }
     
-    .lead{
+  .lead{
     margin:20px 0 0 0;
-    }
+  }
     
-    .btn-block{
+  .btn-block{
     width:200px;
     padding: 30px;
-    }
+  }
 }
