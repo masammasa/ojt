@@ -16,9 +16,12 @@ body{
     
 }
 
-#main-img{
+#mainpc{
     display: block;
     margin: 0 auto;
+}
+#mainsp{
+    display: none;
 }
 
 .logo-img{
@@ -27,16 +30,74 @@ body{
     top: -25%;
 }
 
-.vt-img{
+#vtpc{
     position: absolute;
     right: 0;
     top: 49.5%;
+}
+
+#vtsp{
+    display: none;
 }
 
 .keyvisual p{
     padding-top: 1%;
 }
 
+.brsp{
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
+    
+
+    .keyvisual{
+        width: 100%;
+        text-align: center;
+        padding-top: 30%;
+    }
+    
+    #mainpc{
+        display: none;
+    }
+
+    #mainsp{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .imgs{
+    }
+
+    .logo-img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-110%);
+    }
+
+    .keyvisual p{
+        padding-top: 3%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .brsp{
+        display: block;
+       
+    }
+
+    #vtpc{
+        display: none;
+    }
+
+    #vtsp{
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
+
     
 }
