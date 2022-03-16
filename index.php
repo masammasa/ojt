@@ -120,7 +120,6 @@
               <p class="read-more">READ MORE</p>
               <p class="read-line">ー</p>
             </div>
-
           </div>
 
           <div class="contents">
@@ -128,17 +127,36 @@
             <div class="word">
               <p>2018/5/15</p>
               <p>ベイエリアおしゃれすぎる問題</p>
-
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>
               <p class="read-line">ー</p>
             </div>
-
-
-
           </div>
-
+          <?php 
+          if (have_posts()):
+            while (have_posts()):
+              the_post();
+          ?>
+          <div class="contents">
+            <a href="<?php the_permalink();?>">
+              <img src="<?php the_post_thumbnail_url();?>" alt="">
+            </a>
+            <div class="word">
+              <p><?php echo get_the_date();?></p>
+              <P><<?php the_title();?>/P>
+            </div>
+            <div class="read">
+              <p class="read-more">READ MORE</p>
+              <p class="read-line">ー</p>
+            </div>
+            <?php endwhile;
+            else:?>
+            <section class="section3">
+              <p>表示する記事がありません。</p>
+            </section>
+            <?php endif; ?>
+          </div>
         </div>
     </section>
 
