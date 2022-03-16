@@ -12,9 +12,9 @@
    }
    
    .contents{
-       width: 320px;
-       height: 500px;
-       margin: 40px 30px;
+       width: 27%;
+       height: 50vw;
+       margin: 1% 2.5%;
        display: inline-block;
        cursor: pointer;
        transition: all 0.3s ease 0s;
@@ -29,6 +29,7 @@
    
    .contents p{
        line-height: 3ex;
+       padding: 8px;
    }
    
    
@@ -318,12 +319,18 @@
     width: 60%;
   }
 
-  /* kae */
   .contents{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+    width: 60%;
+    height: 80vw;
+    margin: 40px 2.5%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
 
+.read{
+  height: 10vw;
+}
 
 }
