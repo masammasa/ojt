@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
   <title>Document</title>
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -171,6 +172,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/js/5-2-1.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/masa.js"></script>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
