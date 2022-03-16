@@ -149,7 +149,7 @@
             </a>
             <div class="word">
               <p><?php echo get_the_date();?></p>
-              <P><<?php the_title();?>/P>
+              <P><?php the_title();?></P>
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>
