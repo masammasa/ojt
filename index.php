@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
   <title>Document</title>
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -38,9 +39,11 @@
   <main>
     <div class="keyvisual">
       <div class="imgs">
-      <div id="slide">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" id="mainpc" alt="mainpc">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" id="mainsp" alt="mainsp">
+        <div id="slidepc">
+        <?php echo do_shortcode('[smartslider3 slider="2"]');?>
+        </div>
+        <div id="slidesp">
+        <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
         </div>
             <div class="logo-img">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="logo-img">
@@ -122,7 +125,6 @@
               <p class="read-more">READ MORE</p>
               <p class="read-line">ー</p>
             </div>
-
           </div>
 
           <div class="contents">
@@ -130,17 +132,36 @@
             <div class="word">
               <p>2018/5/15</p>
               <p>ベイエリアおしゃれすぎる問題</p>
-
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>
               <p class="read-line">ー</p>
             </div>
-
-
-
           </div>
-
+          <?php 
+          if (have_posts()):
+            while (have_posts()):
+              the_post();
+          ?>
+          <div class="contents">
+            <a href="<?php the_permalink();?>">
+              <img src="<?php the_post_thumbnail_url();?>" alt="">
+            </a>
+            <div class="word">
+              <p><?php echo get_the_date();?></p>
+              <P><<?php the_title();?>/P>
+            </div>
+            <div class="read">
+              <p class="read-more">READ MORE</p>
+              <p class="read-line">ー</p>
+            </div>
+            <?php endwhile;
+            else:?>
+            <section class="section3">
+              <p>表示する記事がありません。</p>
+            </section>
+            <?php endif; ?>
+          </div>
         </div>
     </section>
 
@@ -155,6 +176,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/js/5-2-1.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/masa.js"></script>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
