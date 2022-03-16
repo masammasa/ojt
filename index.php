@@ -38,8 +38,10 @@
   <main>
     <div class="keyvisual">
       <div class="imgs">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" id="mainpc" alt="mainpc">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" id="mainsp" alt="mainsp">
+      <div id="slide">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" id="mainpc" alt="mainpc">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" id="mainsp" alt="mainsp">
+        </div>
             <div class="logo-img">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="logo-img">
             </div>

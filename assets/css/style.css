@@ -228,11 +228,11 @@
   position: relative;
 }
 
-#mainpc{
+#slide #mainpc{
   display: block;
   margin: 0 auto;
 }
-#mainsp{
+#slide #mainsp{
   display: none;
 }
 
@@ -276,11 +276,11 @@
     padding: 35% 0 10% 0;
   }
 
-  #mainpc{
+  #slide #mainpc{
     display: none;
   }
 
-  #mainsp{
+  #slide #mainsp{
     display: block;
     margin: 0 auto;
     position: relative;
@@ -319,5 +319,5 @@
     width: 60%;
   }
 
-
 }
+
