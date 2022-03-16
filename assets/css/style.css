@@ -1,6 +1,7 @@
 #Latest-Articles h2{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 30px;
    }
    
    .image-lists{
@@ -13,7 +14,7 @@
    
    .contents{
        width: 27%;
-       height: 50vw;
+       height: 500px;
        margin: 1% 2.5%;
        display: inline-block;
        cursor: pointer;
@@ -93,17 +94,20 @@
     top: -100vh;
   }
   main{
-    max-width: 1152px;
+    width: 1152px;
     margin: 0 auto;
+  }
+
+  .image{
+width: 100%;
+
   }
   @media screen and (max-width:767px){
     .showing{
       top: 0;
       background-color:rgba(255, 255, 255, 0.9);
     }
-    *{
-      width: 100vw;
-    }
+ 
     .header{
       position: relative;
       overflow: hidden;
@@ -269,6 +273,7 @@
 
   main{
     margin: 0 0;
+    width: 100%;
   }
 
   .keyvisual{
@@ -321,7 +326,7 @@
 
   .contents{
     width: 60%;
-    height: 80vw;
+    height: auto;
     margin: 40px 2.5%;
     display: inline-block;
     cursor: pointer;
@@ -331,5 +336,6 @@
 
 .read{
   height: 10vw;
+  position: static;
 }
 }
