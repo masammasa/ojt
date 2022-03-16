@@ -29,6 +29,7 @@
    
    .contents p{
        line-height: 3ex;
+       padding: 8px;
    }
    
    
@@ -311,13 +312,6 @@
     top: 5%;
     left: 4%;
     width: 500px;
-  }
-
-  /* kae */
-  .contents{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 
 
