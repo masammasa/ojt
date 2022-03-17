@@ -67,7 +67,7 @@
     justify-content: end;
     align-items: center;
     padding: 3% 0;
-    width: 100vw;
+    min-width: 1152px;
     position: relative;
   }
   .headerLink{
@@ -83,7 +83,7 @@
     text-align: center;
     padding: 5% 0;
     background-color: black;
-    width: 100vw;
+    min-width: 1152px;
     margin-top: 10%;
   }
   footer p{
@@ -112,10 +112,14 @@ width: 100%;
       position: relative;
       overflow: hidden;
       padding: 0;
+      min-width: 100%;
     }
     .headerLink{
       position: absolute;
       right: -100%;
+    }
+    footer{
+      min-width: 100%;
     }
     .spMenu{
       height: 100vh;
