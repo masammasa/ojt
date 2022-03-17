@@ -36,10 +36,14 @@
     </div>
   </header>
   <main>
-    <div class="keyvisual">
+  <div class="keyvisual">
       <div class="imgs">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" id="mainpc" alt="mainpc">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" id="mainsp" alt="mainsp">
+        <div id="slidepc">
+        <?php echo do_shortcode('[smartslider3 slider="2"]');?>
+        </div>
+        <div id="slidesp">
+        <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
+        </div>
             <div class="logo-img">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="logo-img">
             </div>
@@ -65,7 +69,7 @@
             </a>
             <div class="word">
               <p><?php echo get_the_date();?></p>
-              <P><<?php the_title();?>/P>
+              <P><?php the_title();?></P>
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>

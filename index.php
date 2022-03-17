@@ -138,6 +138,7 @@
               <p class="read-line">ー</p>
             </div>
           </div>
+
           <?php 
           if (have_posts()):
             while (have_posts()):
@@ -155,13 +156,13 @@
               <p class="read-more">READ MORE</p>
               <p class="read-line">ー</p>
             </div>
+            </div>
             <?php endwhile;
             else:?>
             <section class="section3">
               <p>表示する記事がありません。</p>
             </section>
             <?php endif; ?>
-          </div>
         </div>
     </section>
 
