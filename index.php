@@ -90,7 +90,6 @@
     </section>
 
 
-
   </main>
   <footer>
     <p>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</p>
