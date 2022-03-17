@@ -86,6 +86,7 @@
               <p>表示する記事がありません。</p>
             </section>
             <?php endif; ?>
+            <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="6"]'); ?>
           </div>
     </section>
 
@@ -99,6 +100,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/js/5-2-1.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/masa.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/script.js"></script>
+
   <?php wp_footer(); ?>
 </body>
 
