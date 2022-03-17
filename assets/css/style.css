@@ -1,7 +1,7 @@
 #Latest-Articles h2{
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
    }
    
    .image-lists{
@@ -98,10 +98,12 @@
     margin: 0 auto;
   }
 
-  .image{
-width: 100%;
-
-  }
+.image{
+  width: 100%;
+}
+.image-lists a{
+  display: block;
+}
   @media screen and (max-width:767px){
     .showing{
       top: 0;
@@ -329,9 +331,8 @@ width: 100%;
   }
 
   .contents{
-    width: 60%;
+    width: 70%;
     height: auto;
-    margin: 40px 2.5%;
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -339,7 +340,7 @@ width: 100%;
 }
 
 .read{
-  height: 10vw;
   position: static;
+  margin-top: 20%;
 }
 }

@@ -70,6 +70,7 @@
             <div class="word">
               <p><?php echo get_the_date();?></p>
               <P><?php the_title();?></P>
+              <p><?php the_content(); ?></p>
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>
