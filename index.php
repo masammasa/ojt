@@ -84,6 +84,7 @@
               <p>表示する記事がありません。</p>
             </section>
             <?php endif; ?>
+            </div>
         </div>
     </section>
 
