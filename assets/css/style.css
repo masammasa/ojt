@@ -102,6 +102,8 @@
 width: 100%;
 
   }
+
+
   @media screen and (max-width:767px){
     .showing{
       top: 0;
