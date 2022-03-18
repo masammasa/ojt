@@ -22,6 +22,16 @@
        transition: all 0.3s ease 0s;
        position: relative;
    }
+
+   .alm-reveal{
+    width: 27%;
+    height: 500px;
+    margin: 1% 2.5%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+   }
    
    .contents:hover{
        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
@@ -288,7 +298,6 @@
 .read-more{
 	position: relative;
 	text-align: right;
-	font-size: 15px;
   margin: 0 0 8% 0;
 }
 
@@ -382,6 +391,14 @@
     transition: all 0.3s ease 0s;
     position: relative;
 }
+  .alm-reveal{
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
 
 .read{
   position: static;
@@ -391,7 +408,6 @@
 .read-more{
 	position: relative;
 	text-align: right;
-	font-size: 15px;
 }
 
 .read-more::before{
@@ -424,4 +440,20 @@
 
 }
 
+#ajax-load-more{
+  width: 100%;
+}
 
+#ajax-load-more-wrap{
+  width: 100%;
+}
+
+.alm-listing alm-ajax{
+  width: 100%;
+}
+
+.alm-reveal{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

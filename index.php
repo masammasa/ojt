@@ -87,7 +87,7 @@
               <p>表示する記事がありません。</p>
             </section>
             <?php endif; ?>
-            <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="6"]'); ?>
+            <?php echo do_shortcode('[ajax_load_more loading_style="blue" post_type="post" posts_per_page="6" pause="true" scroll="false"]'); ?>
           </div>
     </section>
 
