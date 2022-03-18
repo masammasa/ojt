@@ -289,7 +289,6 @@
 .read-more{
 	position: relative;
 	text-align: right;
-	font-size: 15px;
   margin: 0 0 8% 0;
 }
 
@@ -400,7 +399,6 @@
 .read-more{
 	position: relative;
 	text-align: right;
-	font-size: 15px;
 }
 
 .read-more::before{
