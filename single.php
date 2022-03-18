@@ -74,7 +74,7 @@
             </div>
             <div class="read">
               <p class="read-more">READ MORE</p>
-              <p class="read-line">ー</p>
+              <!-- <p class="read-line">ー</p> -->
             </div>
             <?php endwhile;
             else:?>

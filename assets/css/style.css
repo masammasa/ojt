@@ -56,9 +56,9 @@
     text-align: right;
 }
 
-   .read-line{
+   /* .read-line{
        text-align: right;
-   }
+   } */
 
    .word{
     width: 100%;
@@ -114,6 +114,8 @@
 .image-lists a{
   display: block;
 }
+
+
   @media screen and (max-width:767px){
     .showing{
       top: 0;
@@ -238,7 +240,7 @@
   /* 赤嶺のkeyvisual */
 
 .keyvisual{
-  padding: 3% 9%;
+  padding: 7% 9%;
   padding-bottom: 10%;
   margin: 0 auto;
   width: 100%;
@@ -284,7 +286,40 @@
 .brsp{
   display: none;
 }
+.read-more{
+	position: relative;
+	text-align: right;
+	font-size: 15px;
+  margin: 0 0 8% 0;
+}
 
+.read-more::before{
+  content: '';
+	position: absolute;
+	left: 68%;
+	bottom: 0;
+	width: 24%;
+  border-bottom: solid 1px #000;
+}
+
+.contents:hover .read-more:before{
+	content: '';
+	position: absolute;
+	left: 92%;
+	bottom: 0;
+	width: 24%;
+	transform: translateX(-100%);
+	border-bottom: solid 1px #000;
+	animation: border_anim 0.3s linear forwards;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 24%;
+  }100%{
+		width: 82%;
+	}
+}
 @media screen and (max-width: 767px) {
 
   main{
@@ -361,6 +396,41 @@
   position: static;
   margin-top: 20%;
 }
+
+.read-more{
+	position: relative;
+	text-align: right;
+	font-size: 15px;
+}
+
+.read-more::before{
+  content: '';
+	position: absolute;
+	left: 87%;
+	bottom: 0;
+	width: 9%;
+  border-bottom: solid 1px #000;
+}
+
+.contents:hover .read-more:before{
+	content: '';
+	position: absolute;
+	left: 96%;
+	bottom: 0;
+	width: 20%;
+	transform: translateX(-100%);
+	border-bottom: solid 1px #000;
+	animation: border_anim 0.3s linear forwards;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 9%;
+  }100%{
+		width: 34%;
+	}
+}
+
 }
 
 #ajax-load-more{
