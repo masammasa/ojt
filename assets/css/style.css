@@ -8,14 +8,15 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: center;
-       width: 100%;
+       width: 90%;
+       margin: 0 auto;
    
    }
    
    .contents{
-       width: 27%;
-       height: 500px;
-       margin: 1% 2.5%;
+       width: 28%;
+       height: 380px;
+       margin: 1% 1.5% 6% 1.5%;
        display: inline-block;
        cursor: pointer;
        transition: all 0.3s ease 0s;
@@ -107,11 +108,19 @@
 
 
   @media screen and (max-width:767px){
+    .image-lists{
+      width: 100%;
+    }
+    
     .showing{
-      top: 0;
+      top: 6%;
       background-color:rgba(255, 255, 255, 0.9);
     }
- 
+    header{
+      position: absolute;
+      width: 100%;
+      top: 15%;
+    }
     .header{
       position: relative;
       overflow: hidden;
@@ -319,7 +328,7 @@
 
   .keyvisual{
     width: 100%;
-    padding: 35% 0 10% 0;
+    padding: 45% 0 10% 0;
   }
 
   #slidepc{
@@ -337,7 +346,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%,-110%);
-    width: 32%;
+    width: 36%;
   }
 
   .keyvisual p{
