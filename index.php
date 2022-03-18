@@ -60,33 +60,6 @@
       <h2>Latest Articles</h2>
       <div class="image-lists">
 
-          <?php 
-          if (have_posts()):
-            while (have_posts()):
-              the_post();
-          ?>
-            <a class="contents" href="<?php the_permalink();?>">
-          
-              <img src="<?php the_post_thumbnail_url();?>" alt="">
-              <div class="word">
-                <p><?php echo get_the_date();?></p>
-                <p><?php the_title();?></p>
-              </div>
-              <div class="read">
-                <p class="read-more">READ MORE</p>
-                <!-- <p class="read-line">ー</p> -->
-
-              </div>
-            
-          </a>
-            
-            <?php endwhile;
-            else:
-            ?>
-            <section class="section3">
-              <p>表示する記事がありません。</p>
-            </section>
-            <?php endif; ?>
             <?php echo do_shortcode('[ajax_load_more loading_style="blue" post_type="post" posts_per_page="6" pause="true" scroll="false"]'); ?>
           </div>
     </section>
