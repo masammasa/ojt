@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
   <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/css/5-2-1.css">
@@ -59,6 +58,7 @@
     <section id="Latest-Articles">
       <h2>Latest Articles</h2>
       <div class="image-lists">
+
 
             <?php echo do_shortcode('[ajax_load_more loading_style="blue" post_type="post" posts_per_page="6" pause="true" scroll="false"]'); ?>
           </div>
